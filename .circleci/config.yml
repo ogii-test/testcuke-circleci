@@ -26,6 +26,7 @@ commands: # reusable commands with parameters
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
   build:
+    parallelism: 2
     executor: ruby/default
     steps:
       - checkout
